@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM IN JAVASCRIPT</title>
+</head>
+<body>
+	<!-- ******************************************************************************************************************** -->
+
+	<!-- <h1 id="wlcmsg">WELOCME TO JAVASCRIPT....!!!</h1>
+<script type="text/javascript">
+	//data get throutgh document.getElementById() method
+
+	var msg=document.getElementById('wlcmsg');
+    var a=msg.innerHTML;
+    console.log(msg);
+    console.log(a);
+</script> -->
+
+<!-- ******************************************************************************************************************** -->
+
+<!-- <h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByTagName() method
+
+    var msg=document.getElementsByTagName('h1');//h1 array is create like [h1, h1, h1, h1]
+    var a=msg.innerHTML;
+
+    console.log(msg);
+    console.log(a);//output is undefined
+</script> -->
+
+<!-- ******************************************************************************************************************** -->
+
+<!-- <h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1>
+
+<script type="text/javascript">
+
+//data get throutgh document.getElementsByTagName() method
+
+	var msg1=document.getElementsByTagName('h1')[2].innerHTML;
+	
+
+    console.log(msg1);//output is Hello..!!...Friends...!!
+   
+</script> -->
+
+<!-- ******************************************************************************************************************** -->
+
+<!-- <h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1> -->
+
+<!-- <script type="text/javascript">
+
+//data get throutgh document.getElementsByTagName() method
+
+	var msg1=document.getElementsByTagName('h1')[0].innerHTML;
+	var msg2=document.getElementsByTagName('h1')[1].innerHTML;
+	var msg3=document.getElementsByTagName('h1')[2].innerHTML;
+	var msg4=document.getElementsByTagName('h1')[3].innerHTML;
+   
+
+    console.log(msg1);//output is WELOCME TO JAVASCRIPT....!!!
+    console.log(msg2);//output is This is heading tag...
+    console.log(msg3);//output is Hello..!!...Friends...!!
+    console.log(msg4);//output is Hey....!
+                     
+                     
+</script> -->
+<!-- ********************************************************************************************************************** -->
+<!-- 
+<h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h2>This is heading tag...</h2>
+<h3>Hello..!!...Friends...!!</h3>
+<h4>Hey....!</h4>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByTagName() method
+
+    var msg=document.getElementsByTagName('h2')[0].innerHTML;
+    
+    console.log(msg);
+   // console.log(a);
+</script> -->
+<!-- **************************************************************************************************************** -->
+<!-- <h1 class="heading">WELOCME TO JAVASCRIPT....!!!</h1>
+<h1 class="heading">This is heading tag...</h1>
+<h1 class="heading">Hello..!!...Friends...!!</h1>
+<h1 class="heading">Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByClassName() method
+    var msg=document.getElementsByClassName('heading')[0].innerHTML;
+    var msg1=document.getElementsByClassName('heading')[1].innerHTML;
+    var msg2=document.getElementsByClassName('heading')[2].innerHTML;
+    var msg3=document.getElementsByClassName('heading')[3].innerHTML;
+    
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+    console.log(msg3);
+   // console.log(a);
+</script> -->
+<!-- ******************************************************************************************************************** -->
+<!-- <script type="text/javascript">
+//data get throutgh document.getElementsByName() method
+    var msg=document.getElementsByName('FirstName')[0].value;
+    var msg1=document.getElementsByName('MiddleName')[0].value;
+    var msg2=document.getElementsByName('LastName')[0].value;
+   
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+   // console.log(a);
+</script> -->
+<!-- ************************************************************************************************************ -->
+
+<h1 class="heading">WELOCME TO <span>JAVASCRIPT</span>....!!!</h1>
+<h1 class="heading">This is <span>heading tag</span>...</h1>
+<h1 class="heading">Hello..!!...<span>Friends</span>...!!</h1>
+<h1 class="heading">Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByClassName() method
+    var msg=document.getElementsByClassName('heading')[0].innerHTML;
+    var msg1=document.getElementsByClassName('heading')[1].innerText;
+    var msg2=document.getElementsByClassName('heading')[2].innerConent;
+    var msg3=document.getElementsByClassName('heading')[3].innerHTML;
+    
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+    console.log(msg3);
+   // console.log(a);
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		 var a=[10,20,30,40,50];
+		 var b=[11,22,33,44,55];
+		 var c=[...a ,...b];
+		 console.log(c)
+</script>
+
+
+
+<script type="text/javascript">
+	function view(...a)//rest operator
+	{
+		console.log(a);
+	}
+	view(11,22,33,44);
+
+</script>
+
+	<script type="text/javascript">
+	function add(...a)//rest operator
+	{
+		var sum=0;
+		for (var i = 0; i <a.length; i++)
+	    {
+			sum+=a[i];
+		}
+		console.log(sum);
+	}
+	add(11,22,33,44);
+
+</script>
+
+
+<script type="text/javascript">
+	var arr=[111,222,333,444,555];
+	function add(...a)//rest operator
+	{
+		var sum=0;
+		for (var i = 0; i <a.length; i++)
+	    {
+			sum+=a[i];
+		}
+		console.log(sum);
+	}
+	add(...arr);//spread operator
+
+</script>
+
+<script type="text/javascript">
+	var arr=[111,222,333,444,555];
+	
+	console.log(...arr);//spread operator
+
+</script>
+</body>
+</html>

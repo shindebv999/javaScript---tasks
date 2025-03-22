@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<style type="text/css">
+		.box ,.box2
+		{
+			border: 1px ridge gray;
+			width: 40%;
+			height: 500px;
+			display: inline-block;
+			padding:10px 0 0 20px ;
+			background: #10e1f00d;
+	       box-shadow: 4px 5px 11px 2px grey ;
+	      margin-top: 0px;
+	      border-radius: 10px;
+		}
+		textarea
+		{
+			display: block;
+			margin-bottom: 10px;
+			background:#b7d7e46e;
+
+		}
+		.box input
+		{
+			display: block;
+			margin-bottom: 10px;
+			background: #d7e7e975;
+			height: 30px;
+			width: 200px;
+			border-radius: 10px;
+			border: none;
+			border-bottom: 2px solid #8080809c;
+		}
+		.box #btn
+		{
+			width: 150px;
+			height: 40px;
+			font-size: large;
+			background:linear-gradient(to top right,#97dedfc7,#f39ddf70 );
+	       	box-shadow: 1px 1px 9px gray ;
+	       	border-radius:30px ;
+		}
+		.required::after
+		{
+			content: '*';
+			color: red;
+		}
+		
+		 .box2
+		 {
+		 	position: absolute;
+		 	top: 10px;
+		 	left: 600px;
+		 }
+		.box2 label,span
+		{
+			display: block;
+			margin-bottom: 30px;
+		}
+		span
+		{
+			border: 1px solid black;
+			border: none;
+			border-bottom: 1px solid lightgray;
+			width: 40%;
+		}
+       
+	</style>
+	<script type="text/javascript">
+		function formVlidation()
+{
+var fullName=document.getElementById('fullname').value;
+var email=document.getElementById('email').value;
+var password=document.getElementById('password').value;
+var cpassword=document.getElementById('cpassword').value;
+var textarea=document.getElementById('textarea').value;
+ if (fullName ==" " || email ==" " || password ==" " || cpassword =="") 
+ {
+ 	alert('please..!! Fill all Mandatory fields...!');
+ }
+ else
+ {
+ 	alert('Your data is Successfully Submited...!!');
+ }
+document.getElementById('label1').innerHTML=fullName;
+document.getElementById('label2').innerHTML=email;
+document.getElementById('label3').innerHTML=password;
+document.getElementById('label4').innerHTML=cpassword;
+document.getElementById('label5').innerHTML=textarea;
+
+}
+function confirm()
+{ 
+    var password=document.getElementById('password').value;
+    var cpassword=document.getElementById('cpassword').value;
+
+
+    if (password!=cpassword) 
+    {
+         alert('please enter correct password');
+     }
+    
+}
+
+
+
+
+	</script>
+</head>
+<body>
+<div class="box">
+	<form action="#">
+	<label class="required">Full Name:</label>
+	<input type="text" id="fullname" placeholder="Enter Your Full Name"name="">
+	<label class="required">Email Id:</label>
+	<input type="Email" id="email" placeholder="abc@gmail.com "name="">
+	<label class="required">Password:</label>
+	<input type="Password" id="password" placeholder=" Enter Your Password" name="">
+	<label class="required">Confirm Password:</label>
+	<input type="password" id="cpassword" onblur="confirm()"  placeholder=" Enter Your password again"name="">
+	<label>Address:</label>
+	<textarea id="textarea" rows="10" cols="40"></textarea>
+	<input type="submit" id="btn" value="Submit" onclick="formVlidation()">
+</form>
+</div>
+
+<div class="mbox">
+	
+<div class="box2">
+<label >Full Name:</label><span id="label1"> </span>
+<label >Email Id:</label><span id="label2"> </span>
+<label >Password:</label><span id="label3"> </span>
+<label >Confirm Password:</label><span id="label4"> </span>
+<label >Address:</label><span id="label5"> </span>
+</div>
+
+</div>
+
+</body>
+</html>

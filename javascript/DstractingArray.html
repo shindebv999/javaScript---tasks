@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+		var array=["Riya","Sharma",21,"Mumbai","AI & Machine Lerning"];
+
+		let [firstname,,age,address,specilization]=array;
+
+		console.log(firstname);
+		console.log(specilization);
+
+	</script>
+
+	<script type="text/javascript">
+		var array=["Riya","Sharma",21,"Mumbai","AI & Machine Lerning"];
+
+		let [firstname,,age,address,specilization]=array;
+
+		console.log(age);
+		console.log(address);
+		console.log(specilization);
+
+	</script>
+
+		<script type="text/javascript">
+		var array=["Riya","Sharma",21,"Mumbai","AI & Machine Lerning"];
+
+		let [firstname,...studentinfo]=array;
+
+		console.log(firstname);
+		console.log(studentinfo);
+
+	</script>
+
+		<script type="text/javascript">
+		var array=[,"Sharma",21,"Mumbai","AI & Machine Lerning"];
+
+		let [firstname="siya",...studentinfo]=array;
+
+		console.log(firstname);
+		console.log(studentinfo);
+
+	</script>
+
+<script type="text/javascript">
+		var array=["komal","Sharma",21,"Mumbai","AI & Machine Lerning"];
+
+		let [firstname="siya",...studentinfo]=array;
+
+		console.log(firstname);
+		console.log(studentinfo);
+
+	</script>
+
+	<script type="text/javascript">
+		var object=
+		{
+			firstname:"Riya",
+			lastname:"sharma",
+			age:21,
+			specilization:"cloud computing",
+
+			Address:{
+				city:"pune",
+				State:"maharastra",
+				pincode:413307
+
+			}
+			
+			
+	}
+
+		let {firstname:fName,lastname:lName,age,specilization,Address}=object;
+		console.log(fName);
+		console.log(lName);
+		
+
+	</script>
+
+	<script type="text/javascript">
+		var object=
+		{
+			firstname:"Riya",
+			lastname:"sharma",
+			age:21,
+			specilization:"cloud computing",
+			Address:"pune"
+			
+	}
+
+		let {firstname,lastname,age,specilization,Address}=object;
+
+		console.log(firstname);
+		console.log(specilization);
+		console.log(Address);
+
+	</script>
+
+<script type="text/javascript">
+		var object=
+		{
+			firstname:"Riya",
+			lastname:"sharma",
+			age:21,
+			specilization:"cloud computing",
+
+			Address:{
+				city:"pune",
+				State:"maharastra",
+				pincode:413307
+
+			}
+			
+			
+	}
+
+		let {firstname,lastname,age,specilization,Address}=object;
+		console.log(firstname);
+		console.log(age);
+		console.log(Address.city);
+
+	</script>
+
+<script type="text/javascript">
+		var firstName="Bhagyashri";
+		var id=111;
+
+		let object={firstName,id}
+		console.log(object);
+		
+	</script>
+
+<script type="text/javascript">
+		var firstName="Bhagyashri";
+		var id=111;
+
+		let object={firstName,id};
+
+		object={id,firstName};
+
+		console.log(object);
+		
+	</script>
+
+
+<script type="text/javascript">
+		var a,b;
+		[a,b]=["Bhagyashri","komal"];
+
+		[a,b]=[b,a];
+		
+
+		console.log(a);
+		console.log(b);
+		
+	</script>
+
+</body>
+</html>

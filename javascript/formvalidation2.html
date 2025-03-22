@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<!--           **** CSS code here ****            -->
+
+	<style type="text/css">
+
+		.box ,.box2
+		{
+			border: 1px ridge gray;
+			width: 40%;
+			height: 570px;
+			display: inline-block;
+			padding:10px 0 0 20px ;
+			background: #b8cfe185;
+	        box-shadow: 4px 5px 11px 2px grey ;
+	        margin-top: 0px;
+	      
+		} 
+		textarea
+		{
+			display: block;
+			margin-bottom: 10px;
+			background:#b7d7e46e;
+
+		}
+		.box input
+		{
+			display: block;
+			background: #d7e7e975;
+			height: 30px;
+			width: 200px;
+			border-radius: 3px;
+			border: none;
+			border-bottom: 2px solid #03a9f454;
+		}
+		.box label
+		{
+			margin-top: ;
+		}
+		.box #btn
+		{
+			width: 150px;
+			height: 40px;
+			font-size: large;
+			background:linear-gradient(to top right,#97dedfc7,#f39ddf70 );
+	       	box-shadow: 1px 1px 9px gray ;
+	       	border-radius:30px ;
+		}
+		.required::after
+		{
+			content: '*';
+			color: red;
+		}
+		
+		 .box2
+		 {
+		 	position: absolute;
+		 	top: 10px;
+		 	left: 600px;
+		 }
+		.box2 label,span
+		{
+			display: block;
+			margin-bottom: 30px;
+		}
+		.box2 span
+		{
+			
+			border: none;
+			border-bottom: 2px solid #03a9f454;
+			width: 40%;
+			background: #9dcae017;
+			margin-left: 20px;
+			padding: 6px;
+		}
+		textarea
+		{
+			border-bottom: 2px solid #03a9f454;
+		}
+       
+	</style>
+
+<!--           **** javascript code here ****            -->
+
+<script type="text/javascript" src="formvalidation.js"></script>
+
+</head>
+<body>
+
+	<!--           ****form start here ****            -->
+
+<div class="box">
+
+	<form action="#">
+		
+	<label class="required">First Name:</label>
+	<input type="text" id="firstname" placeholder="Enter Your First Name" onblur="charCheck()" > 
+	<span id="charmsg" style="color:red"></span>
+
+	<label class="required">Email Id:</label>
+	<input type="Email" id="email" placeholder="abc@gmail.com " onblur="emailCheck()">
+	<span id="emailmsg" style="color:red"></span>
+
+	<label class="required">Password:</label>
+	<input type="Password" id="password" placeholder=" Enter Your Password" onblur="passwordCheck()">
+	<span id="passmsg" style="color:red"></span>
+
+	<label class="required">Confirm Password:</label>
+	<input type="password" id="cpassword" onblur="confirm()"  placeholder=" Enter Your password again"name="">
+	<span id="confirmPass" style="color:red"></span>
+
+
+	<label>Address:</label>
+	<textarea id="textarea" rows="10" cols="40"></textarea>
+	<input type="submit" id="btn" value="Submit" onclick="formVlidation()">
+
+</form>
+
+</div>
+<!--           **** form end ****            -->
+
+
+
+
+<div class="box2">
+
+<div><label >First Name:</label><span id="label1"> </span></div>
+<div><label >Email Id:</label><span id="label2"> </span></div>
+<div><label >Password:</label><span id="label3"> </span></div>
+<div><label >Confirm Password:</label><span id="label4"> </span></div>
+<div><label >Address:</label><span id="label5"> </span>
+</div>
+
+</div>
+
+
+</body>
+</html>

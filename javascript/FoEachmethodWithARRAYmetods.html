@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var array=[100,200,300,400];
+	array.forEach(arrayval);//internally create conditions & get one by one element from arrayS
+
+	function arrayval(arrValues)
+	{
+		console.log(arrValues);
+	}
+
+</script>
+
+<script type="text/javascript">
+	var array=[100,200,300,400,500];
+	array.forEach(function (arrValues)
+	{
+		console.log(arrValues);
+	});
+</script>
+
+<script type="text/javascript">
+	var array=[100,200,300,400,500];
+	array.forEach(function (arrValues,index)
+	{
+		console.log(index, arrValues);
+	});
+</script>
+
+<script type="text/javascript">
+	var array=[100,200,300,400,500,600];
+	array.forEach( (arrValues,index)=>
+	{
+		console.log(index, arrValues);
+	});
+</script>
+
+<script type="text/javascript">
+	var array=[100,200,300,400,500,600];
+	array.forEach( (arrValues)=>
+	{
+		console.log( arrValues);
+	});
+</script>
+
+<script type="text/javascript">
+
+	//some method: one conditon is true then rturn true
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.some( function(arrValues)
+	{
+		return arrValues>400;
+	});
+	console.log(a);//true
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.some( (arrValues)=>
+	{
+		return arrValues>400;
+	});
+	console.log(a);//true
+</script>
+
+
+
+<script type="text/javascript">
+// every method : one conditon is false then rturn false
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.every( function(arrValues)
+	{
+		return arrValues>300;
+	});
+	console.log(a);//false
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.every( (arrValues)=>
+	{
+		return arrValues>300;
+	});
+	console.log(a);//false
+</script>
+
+<script type="text/javascript">
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.filter( function(arrValues)
+	{
+		return arrValues>300;
+	});
+	console.log(a);//[400, 500, 600]
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.filter( (arrValues)=>
+	{
+		return arrValues>300;
+	});
+	console.log(a);//[400, 500, 600]
+</script>
+
+<script type="text/javascript">
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.find( function(arrValues)
+	{
+		return arrValues>400;
+	});
+	console.log(a);//500500
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.find( (arrValues)=>
+	{
+		return arrValues>400;
+	});
+	console.log(a);//500
+</script>
+
+<script type="text/javascript">
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.findIndex( function(arrValues)
+	{
+		return arrValues>400;
+	});
+	console.log(a);//4
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.findIndex( (arrValues)=>
+	{
+		return arrValues>400;
+	});
+	console.log(a);//4
+</script>
+
+
+<script type="text/javascript">
+
+     //Normal Function
+	var array=[100,200,300,400,500,600];
+	var a =array.reduce( function(arrValues)
+	{
+
+		return arrValues<400;
+		
+	});
+	console.log(a);//true
+
+	 //Arrow Function
+	var array=[100,200,300,400,500,600];
+	var a =array.reduce( (arrValues)=>
+	{
+		
+		return arrValues<400;
+     
+	});
+	console.log(a);//true
+</script>
+
+<script type="text/javascript">
+    //inclueds method
+    
+	var array=[100,200,300,400,500,600,400];
+     console.log(array.includes(100));//true
+     console.log(array.includes(800));//false
+</script>
+<script type="text/javascript">
+
+
+    //inclueds method
+    
+	var array=[100,200,300,400,500,600,400];
+     console.log(array.includes(100));//true
+     console.log(array.includes(800));//false
+
+</script>
+
+
+
+</body>
+</html>

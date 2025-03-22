@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+	<!-- *********************************** string length property **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	// console.log(s.length);
+	document.write(s.length);//O/P:- 11
+</script>
+
+
+<!-- *********************************** string charAt() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.charAt('6'));//O/P: W
+</script>
+
+
+<!-- *********************************** string slice() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.slice(6,11));//O/P:-World
+</script>
+
+
+<!-- *********************************** string  charCodeAt() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.charCodeAt(0));//O/P:- 72
+</script>
+
+
+<!-- *********************************** string  indexOf() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.indexOf('o'));//O/P:- 4
+</script>
+
+
+<!-- *********************************** string  lastIndexOf() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.lastIndexOf('o'));//O/P:- 7
+</script>
+
+
+<!-- *********************************** string  concat() **************************************** -->
+<script type="text/javascript">
+	var s1="Hello ";
+	var s2="World ";
+	var s3="....!"
+	document.write(s1.concat(s2,s3));//O/P:-Hello World ....!
+</script>
+
+
+<!-- *********************************** string  search() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.search("World"));//O/P:-6
+</script>
+
+
+<!-- *********************************** string  replace() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.replace("World","Friends"));//O/P:-Hello Friends
+</script>
+
+
+<!-- *********************************** string  repeat() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.repeat(3));//O/P:-Hello World...! Hello World...! Hello World...!
+</script>
+
+
+<!-- *********************************** string  slice() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.slice(0,7));//O/P: Hello W
+</script>
+
+
+<!-- *********************************** string  split() **************************************** -->
+<script type="text/javascript">
+	var s="Hey whats up guys...! ";
+	document.write(s.split(""));//O/P: H,e,y, ,w,h,a,t,s, ,u,p, ,g,u,y,s,.,.,.,!,
+</script>
+
+
+
+<!-- *********************************** string  startsWith() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	console.log(s.startsWith("Hello"));//O/P: true
+</script>
+
+
+<!-- *********************************** string  substr() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.substr(0,13));//O/P: Hello World..
+</script>
+
+
+<!-- *********************************** string  substring() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.substring(0,13));//O/P: Hello World..
+</script>
+
+
+<!-- *********************************** string  toLowerCase() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.toLowerCase());//O/P: hello world...!
+</script>
+
+
+<!-- *********************************** string  tUpperrCase() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.toUpperCase());//O/P:  HELLO WORLD...!
+</script>
+
+
+<!-- *********************************** string  trim() **************************************** -->
+<script type="text/javascript">
+	var s="   Hello World...!   ";// Remove whitespaces both sides
+    var s2=(s.trim());
+    document.write(s.length);//O/P:-21
+    document.write(s2.length);//O/P:-15
+    document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+<!-- *********************************** string  trimEnd() **************************************** -->
+<script type="text/javascript">
+	var s="   Hello World...!   ";// Remove whitespaces from the end
+	var s2=(s.trimEnd());
+	document.write(s.length);//O/P:-21
+	document.write(s2.length);//O/P:-18
+	document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+<!-- *********************************** string  trimStart() **************************************** -->
+<script type="text/javascript">
+	var s="     Hello World...!   ";// Remove whitespaces from the start
+	var s2=(s.trimStart());
+	document.write(s.length);//O/P:-23
+	document.write(s2.length);//O/P:-18
+	document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+
+
+
+
+</body>
+</html>

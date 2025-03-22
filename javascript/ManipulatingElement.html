@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+
+
+<!-- <script type="text/javascript">
+	var a=document.createElement("h1");
+	a.innerHTML="Welcome....!";
+	console.log(a);
+
+</script> -->
+
+
+<!-- <div id="box"></div>
+<script type="text/javascript">
+	var a=document.createElement("h1");
+	var b="Hello Friends....!";
+    a.innerHTML=b;
+
+	var box =document.getElementById('box');
+	box.appendChild(a);
+</script> -->
+
+
+<!-- <div id="box"></div>
+<script type="text/javascript">
+	var a=document.createElement("h1");
+	a.innerHTML="Hello Friends....!";
+
+	var box =document.getElementById('box');
+	box.appendChild(a);
+</script> -->
+
+<!-- 
+<script type="text/javascript">
+	var a=document.createElement("h1");
+	a.innerHTML="Hello Friends....!";
+
+	var box =document.createElement("div");
+	box.appendChild(a);
+
+	document.body.appendChild(box);
+</script>
+ -->
+
+
+<!-- <style type="text/css">
+		label
+		{
+			display: block;
+			margin-bottom: 7px;
+		}
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	var form=document.createElement("form");
+
+
+	var lbl1=document.createElement("label");
+	var inp1=document.createElement("input");
+	lbl1.innerHTML="User Name: ";
+	inp1.setAttribute("type","text")
+
+	form.appendChild(lbl1);
+	form.appendChild(inp1);
+
+	var box =document.createElement("div");
+	box.appendChild(form);
+
+
+	document.body.appendChild(box);
+</script> -->
+
+
+
+
+<!-- <style type="text/css">
+		label
+		{
+			display: block;
+			margin: 7px 0 7px 0;
+		}
+		input
+		{
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	var form=document.createElement("form");
+
+
+	var lbl1=document.createElement("label");
+	var inp1=document.createElement("input");
+	lbl1.innerHTML="User Name: ";
+	inp1.setAttribute("type","text")
+
+	form.appendChild(lbl1);
+	form.appendChild(inp1);
+
+      // ****************************************************************************//
+
+	var lbl2=document.createElement("label");
+	var inp2=document.createElement("input");
+	lbl2.innerHTML="Password: ";
+	inp2.setAttribute("type","password")
+
+	form.appendChild(lbl2);
+	form.appendChild(inp2);
+
+      // **************************************************************************//
+
+      var btn=document.createElement("input");
+      btn.setAttribute("type","submit")
+      btn.value="Log in";
+
+      form.appendChild(btn);
+
+
+
+	var box =document.createElement("div");
+	box.appendChild(form);
+
+
+	document.body.appendChild(box);
+</script> -->
+
+
+
+
+
+
+
+<style type="text/css">
+		th,td{
+			border: 1px solid red;
+			padding: 5px 10px;
+
+		}
+		table
+		{
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	var table=document.createElement("table");
+
+	var tr1 =document.createElement("tr");
+
+	var th1 =document.createElement("th");
+	th1.innerHTML="ID";
+	var th2 =document.createElement("th");
+	th2.innerHTML="Name";
+	var th3 =document.createElement("th");
+	th3.innerHTML="phone";
+	var th4 =document.createElement("th");
+	th4.innerHTML="Address";
+
+	tr1.appendChild(th1);
+	tr1.appendChild(th2);
+	tr1.appendChild(th3);
+	tr1.appendChild(th4);
+
+	table.appendChild(tr1);
+
+
+ var tr2 =document.createElement("tr");
+
+	var td1 =document.createElement("td");
+	td1.innerHTML="101";
+	var td2 =document.createElement("td");
+	td2.innerHTML="Bhagyashri";
+	var td3 =document.createElement("td");
+	td3.innerHTML="9988867648";
+	var td4 =document.createElement("td");
+	td4.innerHTML="Sangola";
+
+	tr2.appendChild(td1);
+	tr2.appendChild(td2);
+	tr2.appendChild(td3);
+	tr2.appendChild(td4);
+
+	table.appendChild(tr2);
+
+
+	var box=document.createElement("div");
+	box.appendChild(table);
+
+
+	document.body.appendChild(box);
+
+</script>	
+</body>
+</html>

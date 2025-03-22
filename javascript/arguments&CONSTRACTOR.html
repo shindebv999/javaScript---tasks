@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<!-- 	<script type="text/javascript">
+		"use strict";
+		function args(a,b,c,d,e)
+		{
+			console.log(arguments)
+		}
+		args(11,22,33,44,55);
+	</script> -->
+
+	<!-- 
+<script type="text/javascript">
+ 	//"use strict";
+	let args = (a,b,c,d,e) =>
+		{
+			console.log(arguments);
+		}
+  		args(11,22,33,44,55);//output Uncaught ReferenceError: arguments is not defined
+
+	</script> -->
+
+<!-- 
+<script type="text/javascript">
+		
+		function add(name)
+		{
+			this.studentName=name;
+
+		}
+		add("Riya");
+			console.log(studentName);
+
+	</script>
+
+ --><!-- 
+
+
+	<script type="text/javascript">
+		
+		 add=(name)=>
+		{
+			this.studentName=name;
+
+		}
+		add("Ankita",);
+			console.log(studentName);
+
+	</script> -->
+
+
+<!-- <script type="text/javascript">
+		
+		 add=(...studentinfo)=>
+		{
+			this.studentName=studentinfo[0];
+		    this.studentlastName=studentinfo[1];
+			this.studentAge=studentinfo[2];
+			this.studentSubject=studentinfo[3];
+			this.studentAddress=studentinfo[4];
+
+		}
+		add("Ankita","Sagar",101,"Computer_Science","Sangola");
+
+			console.log(studentName);
+			console.log(studentlastName);
+			console.log(studentAge);
+			console.log(studentSubject);
+			console.log(studentAddress);
+
+	</script> -->
+
+
+	
+
+	<!-- <script type="text/javascript">
+		
+		function Employee(...Employeeinfo)
+		{
+			this.EmployeeName=Employeeinfo[0];
+		    this.EmployeeLastName=Employeeinfo[1];
+			this.employeeAge=Employeeinfo[2];
+			this.EmployeeProfile=Employeeinfo[3];
+			this.EmployeeAddress=Employeeinfo[4];
+			this.EmployeeSalary=Employeeinfo[5];
+
+		}
+		var emp=new Employee("Riya","sharma",101,"S/W Developer","pune",45000);//Constractor calling
+		
+
+			console.log(emp.EmployeeName);
+			console.log(emp.EmployeeLastName);
+			console.log(emp.employeeAge);
+			console.log(emp.EmployeeProfile);
+			console.log(emp.EmployeeAddress);
+			console.log(emp.EmployeeSalary);
+
+	</script>
+ -->
+<!-- 
+	<script type="text/javascript">
+		//ARROW Function Doen't support CONSTACTOR
+		let Employee=(...Employeeinfo)=>
+		{
+			this.EmployeeName=Employeeinfo[0];
+		    this.EmployeeLastName=Employeeinfo[1];
+			this.employeeAge=Employeeinfo[2];
+			this.EmployeeProfile=Employeeinfo[3];
+			this.EmployeeAddress=Employeeinfo[4];
+			this.EmployeeSalary=Employeeinfo[5];
+
+		}
+		var emp=new Employee("Riya","sharma",101,"S/W Developer","pune",45000);
+		
+			console.log(emp.EmployeeName);
+			console.log(emp.EmployeeLastName);
+			console.log(emp.employeeAge);
+			console.log(emp.EmployeeProfile);
+			console.log(emp.EmployeeAddress);
+			console.log(emp.EmployeeSalary);//output :-Uncaught TypeError: Employee is not a constructor
+
+	</script> -->
+
+	<!-- 
+	<script type="text/javascript">
+		
+		let Employee=(...Employeeinfo)=>
+		{
+			this.EmployeeName=Employeeinfo[0];
+		    this.EmployeeLastName=Employeeinfo[1];
+			this.employeeAge=Employeeinfo[2];
+			this.EmployeeProfile=Employeeinfo[3];
+			this.EmployeeAddress=Employeeinfo[4];
+			this.EmployeeSalary=Employeeinfo[5];
+
+		}
+		var emp=new Employee("Riya","sharma",101,"S/W Developer","pune",45000);
+		
+			
+			console.log(emp.emp);//output :-Uncaught TypeError: Employee is not a constructor
+
+	</script> -->
+
+     
+
+	<script type="text/javascript">
+		
+		function Employee(...Employeeinfo)
+		{
+			this.EmployeeName=Employeeinfo[0];
+		    this.EmployeeLastName=Employeeinfo[1];
+			this.employeeAge=Employeeinfo[2];
+			this.EmployeeProfile=Employeeinfo[3];
+			this.EmployeeAddress=Employeeinfo[4];
+			this.EmployeeSalary=Employeeinfo[5];
+
+		}
+		var emp=new Employee("Riya","sharma",101,"S/W Developer","pune",45000);//Constractor calling
+
+
+		
+		console.log(emp);
+</script>
+
+</body>
+</html>
+</body>
+</html>

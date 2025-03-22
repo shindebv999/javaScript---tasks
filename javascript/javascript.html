@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+</head>
+<body>
+	
+<!-- 
+// ..............................................................................................................................
+// ************************************************* Basic javascipt **************************************************** -->
+ <script type="text/javascript">
+	//statement print in javascript through document.write();
+	document.write("Welcome to javascript");
+	//html tag ignores javascript
+	document.write("<h1>Welcome to javascript</h1>");
+	//Numbers print
+	document.write(1000);
+	//concatenation througth + sign
+	document.write("<h1>Welcome to javascript</h1>"+"</br>");
+	document.write("Welcome to javascript"+".......");
+	document.write("<h1>Hello...</h1>"+"</br>");
+	document.write("Welcome to javascript  "+ 100+"<br>");
+	//variable declaration
+	var a=1000;  // variable is simply storage location of data OR  variable store diffrent types of data
+	document.write(a+"<br>");
+	//document.write(A+"<br>");// shows error (variable is not defined) can't print any value 'a' & 'A' both are different varoiables
+</script>
+
+
+
+<!-- //************************************ DataTypes***************************************************************************// -->
+	<script type="text/javascript">
+	var a="ram";//String Data type
+	var b=123;//Number Data type
+	var c=true;//Boolean Data type
+	var d=false;//Boolean Data type
+	var e;//Undefined
+	var f=null;//Null Data type
+	console.log(typeof(a));
+	console.log(typeof(b));
+	console.log(typeof(c));
+	console.log(typeof(d));
+	console.log(typeof(e));
+	console.log(typeof(f));
+</script>
+
+
+
+
+<!-- //*********************************************** BOM-Browser object model*****************************************************//
+ -->
+<script type="text/javascript">
+
+//Bom :- browser object model 1)alerts 2)confirm 3)prompt
+alert(" First submite data please....!!!")
+var result= confirm("Are u sure..! Do you wa't dealete data.");
+console.log(result);//true or False
+var res=prompt("enter your number");
+console.log(res);
+</script>
+
+
+
+
+
+<!-- //****************************************************conditional statement **************************************************//
+ -->                       <!--  //   ........................if statement............................./ -->
+  <script type="text/javascript">
+                    
+
+var res=prompt("enter your number 10,20,30,40");
+console.log(res);
+var q=30;
+if (res==30)//if statement
+ {
+ 	alert(" value is "+res);
+
+ }
+
+
+//                         // ........................if-else statement............................./
+var res=prompt("enter your number 10,20,30,40");
+console.log(res);
+var q=30;
+if (res==30)//if-else statement
+ {
+ 	alert(" value is "+res);
+ }
+ else
+ {
+  alert(" value is not "+res);
+ }
+</script>
+<!-- 
+                      //   ........................if-else-if statement............................./ -->
+
+  <script type="text/javascript">
+
+var res=prompt("enter your number 10,20,30,40");
+console.log(res);
+var q=30;
+ if(res>30)
+{
+	alert(" value is greter than 30");
+}
+else if (res==30)
+ {
+ 	alert(" value is 30");
+ }
+
+ else
+ {
+alert(" value is less than 30 ");
+ }
+</script>
+
+                          <!-- //   ........................switch statement............................./ -->
+
+
+  <script type="text/javascript">
+
+switch(5)
+{
+	     case 0:
+	     console.log("sunday");
+		 break;
+	     case 1:
+	     console.log("monday");
+		 break;
+
+		 case 2:
+	     console.log("tuesday");
+		 break;
+
+		 case 3:
+	     console.log("wedansday");
+		 break;
+
+		 case 4:
+	     console.log("thirsday");
+		 break;
+
+		 case 5:
+	     console.log("friday");
+		 break;
+
+		 case 6:
+	     console.log("saturday");
+		 break;
+
+		 default:
+	     console.log("sorry..!!.please enter correct day...!");
+		 break;
+}
+
+</script>
+
+<!-- ********************************************************************************************************************** -->
+ 
+ <script type="text/javascript">
+	var i=4;
+	console.log(i);
+	switch(i)
+	{
+		case 0:
+		document.write("Sunday");
+		break;
+		case 1:
+		document.write("Monday");
+		break;
+		case 2:
+		document.write("Tuesday");
+		break;
+		case 3:
+		document.write("Wendnday");
+		break;
+		case 4:
+		document.write("Thursday");
+		break;
+		case 5:
+		document.write("Friday");
+		break;
+		case 6:
+		document.write("Saturday");
+		break;
+		default:
+		document.write("Please! Enter  Correct day...");
+	}
+</script>
+
+<!-- ************************************ Math Object ***************************************************** -->
+
+
+
+<script type="text/javascript">
+	// square object
+	let sqrt = Math.sqrt(9);
+document.write(sqrt);//O/P:-3
+document.write("<br>")
+
+</script>
+<!-- ........................................................................................................................... -->
+<script type="text/javascript">
+	// round  object
+	let round = Math.round(5.5);
+document.write(round);//O/P:-6
+</script>
+<!-- ........................................................................................................................... -->
+
+<script type="text/javascript">
+	// pow  object
+	let pow = Math.pow(3,4);    
+document.write(pow);//O/P:-81
+</script>
+<!-- ........................................................................................................................... -->
+
+<script type="text/javascript">
+	// floor  object
+	let floor =Math.floor(4.6);  
+document.write(floor);//O/P:-4
+</script>
+<!-- ........................................................................................................................... -->
+
+<script type="text/javascript">
+	// ceil  object
+	let ceil =Math.ceil(4.6);    
+document.write(ceil);//o/p:-5
+</script>
+<!-- ........................................................................................................................... -->
+<script type="text/javascript">
+	// abs  object
+	let abs =Math.abs(-4);      
+document.write(abs);//o/p:-4
+</script>
+
+
+<!-- .................................................Looping Statement........................................................ -->
+<!-- *********************************************** For loop **************************************************** -->
+	<script type="text/javascript">
+	
+	for ( i = 1; i <= 5; i++) {
+		for(j = 1;j <= 5; j++){
+	document.write("*");
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- /////////////////////////////////////////
+ -->
+<script type="text/javascript">
+for ( i = 1; i <= 5; i++) {
+		for(j = 1;j <= i; j++){
+	document.write("*");
+	}
+	document.write("<br>");
+}
+
+document.write("<br>");
+</script>
+
+<!-- /////////////////////////////////////////
+ -->
+<script type="text/javascript">
+for ( i = 5; i >=1; i--) {
+		for(j = 1;j <= i; j++){
+	document.write("*");
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- /////////////////////////////////////////
+ -->
+<script type="text/javascript">
+for ( i = 1; i <= 5; i++) {
+		for(j = 1;j <= i; j++){
+	document.write(j);
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- ///////////////////////////////////////// -->
+
+<script type="text/javascript">
+for ( i = 1; i <= 5; i++) {
+		for(j = 5;j >= i; j--){
+	document.write(j);
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- ///////////////////////////////////////// -->
+
+<script type="text/javascript">
+for ( i = 1; i <= 5; i++) {
+		for(j = i;j >= 1; j--){
+	document.write(j);
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- ///////////////////////////////////////// -->
+
+<script type="text/javascript">
+for ( i = 5; i >= 1; i--) {
+		for(j = 1;j <= i; j++){
+	document.write(j);
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+</script>
+
+<!-- ///////////////////////////////////////// -->
+<script type="text/javascript">
+for ( i = 1; i <= 5; i++) {
+		for(j = i;j <= 5; j++){
+	document.write(j);
+	}
+	document.write("<br>");
+}
+document.write("<br>");
+
+</script>
+
+
+<!-- ************************************************** While loop ***************************************************************** -->
+
+<script type="text/javascript">
+
+	var i=0;
+	while(i<10)
+	{
+		document.write(i+"<br>");//conditon is true upto 9<10 then (10<10 codition is false)then out of loop.
+      i++;
+	}
+
+                         /////////////////////////////////////////
+var j=10;
+	while(j<10)
+	{
+		document.write(i+"<br>");//condition is false because 10<10 (noting print on browser)
+      j++;
+	}
+
+
+                         /////////////////////////////////////////////
+var k=0;
+	while(k<=10)
+	{
+		document.write(k+"  welcome"+"<br>");//conditon is true upto 10<=10 then then out of loop.
+      k++;
+	}
+	
+	                     /////////////////////////////////////////////
+	 var a=0;
+	while(a<=4)
+	{
+		for(i=0;i<=4;i++){
+		document.write( "*");
+	}
+      a++;
+      document.write("<br>")
+	}
+	                         //////////////////////////////////////
+ var b=0;
+	while(b<=5)
+	{
+		for(i=5;i>=b;i--){
+		document.write( "*");//conditon is true upto 10<=10 then then out of loop.
+	}
+      b++;
+      document.write("<br>")
+	}
+
+                         ////////////////////////////////////////
+ var b=5;
+	while(b>=0)
+	{
+		for(i=0;i<=b;i++){
+		document.write( "*");//conditon is true upto 10<=10 then then out of loop.
+	}
+      b--;
+      document.write("<br>")
+	}
+		                     /////////////////////////////////////////////
+	               
+</script>
+
+<!-- *************************************************** Do While loop ******************************************************************** -->
+<script type="text/javascript">
+	i=0
+	do{
+		document.write("Hello!!.....Friends.."+"<br>");
+		i++;
+	}while(i<=5);
+
+
+	////////////////////////////////////////////////////////////
+
+   j=5
+	do{
+		document.write("Hey!!....."+"<br>");
+		j++;
+	}while(j>7);
+
+    /////////////////////////////////////////////////////////////
+
+
+    
+</script>
+
+<!-- ********************************************************** ARRAY METHODS  JS ************************************************************* -->
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array pop() Method
+	array.pop();
+	console.log(array);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array push() Method
+	array.push("bhagyashri");
+	console.log(array);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array shift() Method
+	array.shift();
+	console.log(array);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array reverse() Method
+	array.reverse();
+	console.log(array);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	var p=50;
+	//console.log(array);
+	// Array isArray() Method
+	 var x=Array.isArray(array);//defined array
+	 console.log(x);
+	 var x=Array.isArray(p);//undefined array
+	console.log(x);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	var array1=["bhagyashri",false,123.45,"sheha","komal"];
+	var array2=array.concat(array1);
+	console.log(array);
+	console.log(array1);
+	console.log(array2);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array sort() Method
+	var a=array.sort();
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array fill() Method
+	var a=array.fill(777,2,6);
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array indexOf() Method
+	var a=array.indexOf(true);
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array sort() Method
+	var a=array.sort().reverse();//decending order
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+	<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array toString() Method
+	var a=array.toString();
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array);
+	// Array join() Method
+	var a=array.join("-");
+	console.log(a);
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+<script type="text/javascript">
+	var array=["komal","pratiksha",1234,true,567.89,"shehal",false];
+	console.log(array.length);	
+</script>
+
+<!-- ...................................................................................................................................... -->
+
+ <script type="text/javascript">
+ 	var array=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
+ 	console.log(array);
+  var b=array.slice(5);
+ console.log(b);
+ </script>
+
+<!-- ...................................................................................................................................... -->
+
+ <script type="text/javascript">
+ 	var array=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
+  var b=array.slice(5,9);
+ console.log(b);
+ </script>
+
+<!-- ...................................................................................................................................... -->
+
+ <script type="text/javascript">
+ 	var array=["a","b","c","d","e","f","g","h","i","j","k","l","m","n"];
+ 	console.log(array);
+  var b=array.splice(0,0,1);
+ console.log(array);
+ var b=array.splice(1,0,"z");
+ console.log(array);
+ var b=array.splice(1,1,"r",5,"bhagyashri");
+ console.log(array);
+ </script>
+<!-- ***************************************************ARRAY INSIDE IF CONDITION ************************************************************* -->
+
+<script type="text/javascript">
+		var a=[10,20,30,40,50,60,70,80,90,100];
+
+		for (var i = 0; i < a.length; i++)
+		 {
+		if(a[i]==50){
+	     console.log(a[i]);
+	     }
+	 }
+</script>
+
+<!-- ................................................................................................................................. -->
+
+	 <script type="text/javascript">
+		var a=[10,<script type="text/javascript">
+		var a=[10,20,30,40,50,60,70,80,90,100];
+		var b=[];
+
+		for (var i = 0; i < a.length; i++)
+		 {
+		if(a[i]!=20){
+	    b.push(a[i]);
+	     }
+	      console.log(b);
+	 }</script>	
+
+<!-- ................................................................................................................................. -->
+
+<script type="text/javascript">
+		var a=[10,20,30,40,50,60,70,80,90,100];
+
+		for (var i = 0; i < a.length; i++)
+		 {
+		if(a[i]==50){
+	     continue;
+	     }
+	     console.log(a[i]);
+	 }
+</script>
+
+<!-- ................................................................................................................................. -->
+
+	 	<script type="text/javascript">
+		var a=[10,20,30,40,50,60,70,80,90,100];
+
+		for (var i = 0; i < a.length; i++)
+		 {
+		if(a[i]==50){
+	     break;
+	     }
+	     console.log(a[i]);
+	 }
+</script>
+<!-- **************************************************FUNCTION ******************************************************* -->
+
+<script type="text/javascript">
+	function display()
+	{
+		document.write("welcome to javascript functions...!!");
+	}
+	//calling function
+	display();
+</script>
+
+<script type="text/javascript">
+
+	function display(a)
+	{
+		document.write(a);
+	}
+	//calling function
+	display(78);
+</script>
+<script type="text/javascript">
+	function display(a,b)
+	{
+		document.write(a+b);
+	}
+	//calling function
+	display(30,50);
+</script>
+<script type="text/javascript">
+	var array=["a","b","c","d","e","f","g"]
+	function display(arr)
+	{
+		console.log(arr);
+	}
+	//calling function
+	display(array);
+</script>
+
+<!-- ***************************************************DOM:- Document Object Model********************************************** -->
+
+
+	<h1 id="wlcmsg">WELOCME TO JAVASCRIPT....!!!</h1>
+<script type="text/javascript">
+	//data get throutgh document.getElementById() method
+
+	var msg=document.getElementById('wlcmsg');
+    var a=msg.innerHTML;
+    console.log(msg);
+    console.log(a);
+</script>
+
+<!-- ******************************************************************************************************************** -->
+
+<h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByTagName() method
+
+    var msg=document.getElementsByTagName('h1');//h1 array is create like [h1, h1, h1, h1]
+    var a=msg.innerHTML;
+
+    console.log(msg);
+    console.log(a);//output is undefined
+</script>
+
+<!-- ******************************************************************************************************************** -->
+
+<h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1>
+
+<script type="text/javascript">
+
+//data get throutgh document.getElementsByTagName() method
+
+	var msg1=document.getElementsByTagName('h1')[2].innerHTML;
+	
+
+    console.log(msg1);//output is Hello..!!...Friends...!!
+   
+</script>
+
+<!-- ******************************************************************************************************************** -->
+
+<h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h1>This is heading tag...</h1>
+<h1>Hello..!!...Friends...!!</h1>
+<h1>Hey....!</h1>
+
+<script type="text/javascript">
+
+//data get throutgh document.getElementsByTagName() method
+
+	var msg1=document.getElementsByTagName('h1')[0].innerHTML;
+	var msg2=document.getElementsByTagName('h1')[1].innerHTML;
+	var msg3=document.getElementsByTagName('h1')[2].innerHTML;
+	var msg4=document.getElementsByTagName('h1')[3].innerHTML;
+   
+
+    console.log(msg1);//output is WELOCME TO JAVASCRIPT....!!!
+    console.log(msg2);//output is This is heading tag...
+    console.log(msg3);//output is Hello..!!...Friends...!!
+    console.log(msg4);//output is Hey....!
+                     
+                     
+</script>
+<!-- ********************************************************************************************************************** -->
+
+<h1>WELOCME TO JAVASCRIPT....!!!</h1>
+<h2>This is heading tag...</h2>
+<h3>Hello..!!...Friends...!!</h3>
+<h4>Hey....!</h4>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByTagName() method
+
+    var msg=document.getElementsByTagName('h2')[0].innerHTML;
+    
+    console.log(msg);
+   // console.log(a);
+</script>
+<!-- **************************************************************************************************************** -->
+<h1 class="heading">WELOCME TO JAVASCRIPT....!!!</h1>
+<h1 class="heading">This is heading tag...</h1>
+<h1 class="heading">Hello..!!...Friends...!!</h1>
+<h1 class="heading">Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByClassName() method
+    var msg=document.getElementsByClassName('heading')[0].innerHTML;
+    var msg1=document.getElementsByClassName('heading')[1].innerHTML;
+    var msg2=document.getElementsByClassName('heading')[2].innerHTML;
+    var msg3=document.getElementsByClassName('heading')[3].innerHTML;
+    
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+    console.log(msg3);
+   // console.log(a);
+</script>
+<!-- ******************************************************************************************************************** -->
+<script type="text/javascript">
+//data get throutgh document.getElementsByName() method
+    var msg=document.getElementsByName('FirstName')[0].value;
+    var msg1=document.getElementsByName('MiddleName')[0].value;
+    var msg2=document.getElementsByName('LastName')[0].value;
+   
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+   // console.log(a);
+</script>
+<!-- ************************************************************************************************************ -->
+
+<h1 class="heading">WELOCME TO <span>JAVASCRIPT</span>....!!!</h1>
+<h1 class="heading">This is <span>heading tag</span>...</h1>
+<h1 class="heading">Hello..!!...<span>Friends</span>...!!</h1>
+<h1 class="heading">Hey....!</h1>
+
+<script type="text/javascript">
+//data get throutgh document.getElementsByClassName() method
+    var msg=document.getElementsByClassName('heading')[0].innerHTML;
+    var msg1=document.getElementsByClassName('heading')[1].innerText;
+    var msg2=document.getElementsByClassName('heading')[2].innerConent;
+    var msg3=document.getElementsByClassName('heading')[3].innerHTML;
+    
+    console.log(msg);
+    console.log(msg1);
+    console.log(msg2);
+    console.log(msg3);
+   // console.log(a);
+</script>
+<!-- ************************************GET & SET DOM*********************************************************** -->
+ 
+
+<h1 class="heading"></h1>
+<h1 class="heading"></h1>
+<h1 class="heading"></h1>
+<h1 class="heading"></h1> 
+
+<script type="text/javascript">
+//data set throutgh .innerHTML=" ";
+    document.getElementsByClassName('heading')[0].innerHTML="WELOCME TO JAVASCRIPT....!!!";
+    document.getElementsByClassName('heading')[1].innerHTML="This is heading tag...";
+    document.getElementsByClassName('heading')[2].innerHTML="Hello..!!...Friends...!!";
+    document.getElementsByClassName('heading')[3].innerHTML="Hey....!";
+   </script>
+<!-- ...................................................................................................................... -->
+
+<input type="text" name="FirstName" value="">
+<input type="text" name="MiddleName" value="">
+<input type="text" name="LastName" value="">
+
+<script type="text/javascript">
+//data set throutgh .value
+    document.getElementsByName('FirstName')[0].value="Rutik";
+    document.getElementsByName('MiddleName')[0].value="Rakesh";
+    document.getElementsByName('LastName')[0].value="";
+ 
+</script>
+
+<!-- **********************************************SET THE COLOR FROM JS SIDE********************************************************** -->
+
+
+<h1 id="wlcmsg">WELOCME TO JAVASCRIPT....!!!</h1>
+<script type="text/javascript">
+    
+
+   document.getElementById('wlcmsg').style.color="red";
+    
+
+</script>
+
+<!-- ................................................................................................. -->
+
+     <h1>WELOCME TO JAVASCRIPT....!!!</h1>
+    <h1>This is heading tag...</h1>
+    <h1>Hello..!!...Friends...!!</h1>
+    <h1>Hey....!</h1> 
+
+     <script type="text/javascript">
+
+
+
+    var msg1=document.getElementsByTagName('h1')[0].style;
+    var msg2=document.getElementsByTagName('h1')[1].style;
+    var msg3=document.getElementsByTagName('h1')[2].style;
+    var msg4=document.getElementsByTagName('h1')[3].style;
+msg1.color="red";
+msg1.fontFamily="Arial";
+msg2.color="purple";
+msg2.fontFamily="Arial";
+msg3.color="blue";
+msg3.fontFamily="Arial";
+msg4.color="brown";
+msg4.fontFamily="Arial";
+   </script>
+
+   <!-- ****************************************************EVENT IN JS**************************************************** -->
+
+<input type="submit" onclick="show()">
+
+<script type="text/javascript">
+	function show()
+	{
+		//alert("OnClick Event Here");
+		console.log("OnClick Event Here");
+	}
+</script>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<input type="submit" ondblclick="show()">
+
+<script type="text/javascript">
+	function show()
+	{
+	     alert("OndblClick Event Here");
+
+	}
+</script>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<input type="text" onfocus="show()" id="inp" placeholder="Enter something">
+
+<script type="text/javascript">
+	function show()
+	{
+	     alert("OnFocus Event Here");
+
+	}
+</script>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<input type="text" oninput="show()" id="inp" placeholder="Enter something">
+
+<script type="text/javascript">
+	function show()
+	{
+		var a=document.getElementById('inp').value;
+		console.log(a);
+	}
+</script>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<input type="text" onkeydown="show()" id="inp" placeholder="Enter something">
+
+<script type="text/javascript">
+	function show()
+	{
+		var a=document.getElementById('inp').value;
+		console.log(a);
+	}
+</script>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<input type="text" onkeyup="show()" id="inp" placeholder="Enter something">
+
+<script type="text/javascript">
+	function show()
+	{
+		var a=document.getElementById('inp').value;
+		console.log(a);
+	}
+</script>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<button onmousedown="show()">view...</button>
+<script type="text/javascript">
+	function show()
+	{
+		alert("this is mouse down event here");
+    }
+</script>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<button onmouseup="show()">view...</button>
+<script type="text/javascript">
+	function show()
+	{
+		alert("this is mouseup event here");
+    }
+</script>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<button onmouseover="show()">view...</button>
+<script type="text/javascript">
+	function show()
+	{
+		alert("this is mouseover event here");
+    }
+</script>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<form action="#">
+	<select id="selectName" onchange="show()">
+		<option value=" ">select Student Name</option>
+		<option value="Pratiksha">Pratiksha</option>
+		<option value="shrutika">shrutika</option>
+		<option value="komal">komal</option>
+		<option value="shehal">shehal</option>
+		<option value="sheha">sheha</option>
+	</select>
+</form>
+<script type="text/javascript">
+	function show()
+	{
+		var a=document.getElementById("selectName").value;
+		console.log(a);    }
+</script>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<input type="text" onblur="show()" id="inp" placeholder="Enter something">
+
+<script type="text/javascript">
+	function show()
+	{
+		var a=document.getElementById('inp').value;
+		console.log(a);
+	}
+</script>
+
+<!--*************************************  SET, GET, HAS, REMOVE ATTRIBUTES *********************************************  -->
+<h1 class="head1" style="color: red"; id="head">Hello Friends.......!</h1>
+<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.getAttribute("class");
+	console.log(b);
+
+</script>
+<!-- ...................................................................................... -->
+
+<h1  style="color: red"; id="head">Hello Friends.......!</h1>
+<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.setAttribute("class","align");
+	console.log(b);
+
+</script>
+<!-- ...................................................................................... -->
+
+<h1  style="color: red"; id="head">Hello Friends.......!</h1>
+	<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.hasAttribute("class");//o/p :-false
+	console.log(b);
+
+</script>
+<!-- ...................................................................................... -->
+
+<h1  style="color: red"; id="head">Hello Friends.......!</h1>
+	<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.hasAttribute("style");//o/p :-true
+	console.log(b);
+
+</script>
+<!-- ...................................................................................... -->
+
+<h1  style="color: red"; id="head">Hello Friends.......!</h1>
+	<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.removeAttribute("style");//o/p :-undefind //doen't apply color to the h1 tag
+	console.log(b);
+
+</script>
+<!-- ...................................................................................... -->
+
+<h1  style="color: red"; id="head">Hello Friends.......!</h1>
+	<script type="text/javascript">
+	var a= document.getElementById('head');
+	var b=a.removeAttribute("id");//o/p :undefined  //apply color to the h1 tag
+	console.log(b);
+
+</script>
+
+
+<!-- ********************************************** FORM VALIDATION ***************************************** -->
+
+<!--           **** CSS code here ****            -->
+
+	<style type="text/css">
+
+		.box ,.box2
+		{
+			border: 1px ridge gray;
+			width: 40%;
+			height: 570px;
+			display: inline-block;
+			padding:10px 0 0 20px ;
+			background: #b8cfe185;
+	        box-shadow: 4px 5px 11px 2px grey ;
+	        margin-top: 0px;
+	      
+		} 
+		textarea
+		{
+			display: block;
+			margin-bottom: 10px;
+			background:#b7d7e46e;
+
+		}
+		.box input
+		{
+			display: block;
+			background: #d7e7e975;
+			height: 30px;
+			width: 200px;
+			border-radius: 3px;
+			border: none;
+			border-bottom: 2px solid #03a9f454;
+		}
+		.box label
+		{
+			margin-top: ;
+		}
+		.box #btn
+		{
+			width: 150px;
+			height: 40px;
+			font-size: large;
+			background:linear-gradient(to top right,#97dedfc7,#f39ddf70 );
+	       	box-shadow: 1px 1px 9px gray ;
+	       	border-radius:30px ;
+		}
+		.required::after
+		{
+			content: '*';
+			color: red;
+		}
+		
+		 .box2
+		 {
+		 	position: absolute;
+		 	top: 10px;
+		 	left: 600px;
+		 }
+		.box2 label,span
+		{
+			display: block;
+			margin-bottom: 30px;
+		}
+		.box2 span
+		{
+			
+			border: none;
+			border-bottom: 2px solid #03a9f454;
+			width: 40%;
+			background: #9dcae017;
+			margin-left: 20px;
+			padding: 6px;
+		}
+		textarea
+		{
+			border-bottom: 2px solid #03a9f454;
+		}
+       
+	</style>
+
+<!--           **** javascript code here ****            -->
+
+<script type="text/javascript" >
+	
+	function charCheck()
+	{
+		var firstName=document.getElementById('firstname').value;
+		var char1="^[a-zA-Z]+$";
+
+		if(!(firstName.match(char1)))
+		{
+			document.getElementById('charmsg').innerHTML="Number and special symbol is not allowed...!";
+			document.getElementById('firstname').value="";
+		}
+		else
+		{
+			document.getElementById('charmsg').innerHTML="";
+		}
+	}
+
+function emailCheck()
+	{
+		var email=document.getElementById('email').value;
+		var eml=/\S+@\S+\.\S+/ ;
+
+
+		if(!(email.match(eml)))
+		{
+			document.getElementById('emailmsg').innerHTML="Please..! Enter Valid Email Id...!";
+			document.getElementById('email').value="";
+		}
+		else
+		{
+			document.getElementById('emailmsg').innerHTML="";
+		}
+	}
+ 
+
+ function passwordCheck()
+	{
+		var password=document.getElementById('password').value;
+		var pass=/^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+
+
+		if(!(password.match(pass)))
+		{
+			document.getElementById('passmsg').innerHTML="Please..! Enter Valid password...!";
+			document.getElementById('password').value="";
+		}
+		else
+		{
+			document.getElementById('passmsg').innerHTML="";
+		}
+	}
+	function confirm()
+	{ 
+	    var password=document.getElementById('password').value;
+	    var cpassword=document.getElementById('cpassword').value;
+
+
+	    if (!(password==cpassword))
+	    {
+	    	document.getElementById('confirmPass').innerHTML="please enter correct password";
+	    	document.getElementById('cpassword').value="";
+
+	        // alert('please enter correct password');
+	     }
+	     else
+	     {
+	     	document.getElementById('confirmPass').innerHTML="";
+	     }
+
+	 }
+
+	     function formVlidation()
+	{
+		//          **** gret value from input  ****            //
+
+	var firstName=document.getElementById('firstname').value;
+	var email=document.getElementById('email').value;
+	var password=document.getElementById('password').value;
+	var cpassword=document.getElementById('cpassword').value;
+	var textarea=document.getElementById('textarea').value;
+
+        //  **** check input field fill or not ****          //
+
+	 if (firstName ==" " || email ==" " || password ==" " || cpassword =="") 
+	 {
+	 	alert('please..!! Fill all Mandatory fields...!');
+	 }
+	 else
+	 {
+	 	alert('Your data is Successfully Submited...!!');
+	 }
+		 
+  	
+
+  	    // **** set data to next form ****            
+
+
+	document.getElementById('label1').innerHTML=firstName;
+	document.getElementById('label2').innerHTML=email;
+	document.getElementById('label3').innerHTML=password;
+	document.getElementById('label4').innerHTML=cpassword;
+	document.getElementById('label5').innerHTML=textarea;
+
+	}
+
+</script>
+
+</head>
+<body>
+
+	<!--           ****form start here ****            -->
+
+<div class="box">
+
+	<form action="#">
+		
+	<label class="required">First Name:</label>
+	<input type="text" id="firstname" placeholder="Enter Your First Name" onblur="charCheck()" > 
+	<span id="charmsg" style="color:red"></span>
+
+	<label class="required">Email Id:</label>
+	<input type="Email" id="email" placeholder="abc@gmail.com " onblur="emailCheck()">
+	<span id="emailmsg" style="color:red"></span>
+
+	<label class="required">Password:</label>
+	<input type="Password" id="password" placeholder=" Enter Your Password" onblur="passwordCheck()">
+	<span id="passmsg" style="color:red"></span>
+
+	<label class="required">Confirm Password:</label>
+	<input type="password" id="cpassword" onblur="confirm()"  placeholder=" Enter Your password again"name="">
+	<span id="confirmPass" style="color:red"></span>
+
+
+	<label>Address:</label>
+	<textarea id="textarea" rows="10" cols="40"></textarea>
+	<input type="submit" id="btn" value="Submit" onclick="formVlidation()">
+
+</form>
+
+</div>
+<!--           **** form end ****            -->
+
+
+
+
+<div class="box2">
+
+<div><label >First Name:</label><span id="label1"> </span></div>
+<div><label >Email Id:</label><span id="label2"> </span></div>
+<div><label >Password:</label><span id="label3"> </span></div>
+<div><label >Confirm Password:</label><span id="label4"> </span></div>
+<div><label >Address:</label><span id="label5"> </span>
+</div>
+
+
+<!-- *************************************strimg Methods in js ******************************************************** -->
+
+
+	<!-- *********************************** string length property **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	// console.log(s.length);
+	document.write(s.length);//O/P:- 11
+</script>
+
+
+<!-- *********************************** string charAt() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.charAt('6'));//O/P: W
+</script>
+
+
+<!-- *********************************** string slice() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.slice(6,11));//O/P:-World
+</script>
+
+
+<!-- *********************************** string  charCodeAt() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.charCodeAt(0));//O/P:- 72
+</script>
+
+
+<!-- *********************************** string  indexOf() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.indexOf('o'));//O/P:- 4
+</script>
+
+
+<!-- *********************************** string  lastIndexOf() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.lastIndexOf('o'));//O/P:- 7
+</script>
+
+
+<!-- *********************************** string  concat() **************************************** -->
+<script type="text/javascript">
+	var s1="Hello ";
+	var s2="World ";
+	var s3="....!"
+	document.write(s1.concat(s2,s3));//O/P:-Hello World ....!
+</script>
+
+
+<!-- *********************************** string  search() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.search("World"));//O/P:-6
+</script>
+
+
+<!-- *********************************** string  replace() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World";
+	document.write(s.replace("World","Friends"));//O/P:-Hello Friends
+</script>
+
+
+<!-- *********************************** string  repeat() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.repeat(3));//O/P:-Hello World...! Hello World...! Hello World...!
+</script>
+
+
+<!-- *********************************** string  slice() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.slice(0,7));//O/P: Hello W
+</script>
+
+
+<!-- *********************************** string  split() **************************************** -->
+<script type="text/javascript">
+	var s="Hey whats up guys...! ";
+	document.write(s.split(""));//O/P: H,e,y, ,w,h,a,t,s, ,u,p, ,g,u,y,s,.,.,.,!,
+</script>
+
+
+
+<!-- *********************************** string  startsWith() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	console.log(s.startsWith("Hello"));//O/P: true
+</script>
+
+
+<!-- *********************************** string  substr() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.substr(0,13));//O/P: Hello World..
+</script>
+
+
+<!-- *********************************** string  substring() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.substring(0,13));//O/P: Hello World..
+</script>
+
+
+<!-- *********************************** string  toLowerCase() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.toLowerCase());//O/P: hello world...!
+</script>
+
+
+<!-- *********************************** string  tUpperrCase() **************************************** -->
+<script type="text/javascript">
+	var s="Hello World...! ";
+	document.write(s.toUpperCase());//O/P:  HELLO WORLD...!
+</script>
+
+
+<!-- *********************************** string  trim() **************************************** -->
+<script type="text/javascript">
+	var s="   Hello World...!   ";// Remove whitespaces both sides
+    var s2=(s.trim());
+    document.write(s.length);//O/P:-21
+    document.write(s2.length);//O/P:-15
+    document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+<!-- *********************************** string  trimEnd() **************************************** -->
+<script type="text/javascript">
+	var s="   Hello World...!   ";// Remove whitespaces from the end
+	var s2=(s.trimEnd());
+	document.write(s.length);//O/P:-21
+	document.write(s2.length);//O/P:-18
+	document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+<!-- *********************************** string  trimStart() **************************************** -->
+<script type="text/javascript">
+	var s="     Hello World...!   ";// Remove whitespaces from the start
+	var s2=(s.trimStart());
+	document.write(s.length);//O/P:-23
+	document.write(s2.length);//O/P:-18
+	document.write(s2);//O/P:  Hello World...!
+</script>
+
+
+</div>
+</body>
+</html>

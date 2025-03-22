@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<!-- 
+<script type="text/javascript">
+	setTimeout(show,2000);
+	function show()
+	{
+		alert("WEL-COME...!")
+	}
+</script> -->
+
+
+<!-- 
+	<script type="text/javascript">
+	setTimeout(	function show()
+	{
+		alert("WEL-COME...!");
+	},300);
+   </script> -->
+
+
+
+<!-- 
+<button onclick="stop()">stop</button>
+<script type="text/javascript">
+	var time=setTimeout(	function show()
+	{
+		alert("WEL-COME...!");
+	},3000);
+ function stop()
+ {
+ 	clearTimeout(time);
+ }
+
+</script> -->
+<h1 id="count"></h1>
+	<button onclick="start()">start</button>
+	<button onclick="stop()">stop</button>
+	<button onclick="Restart()">Restart</button>
+<script type="text/javascript">
+	var count=0;
+	var time;
+
+
+	
+	function start()
+	{
+	 time=setInterval(	function ()
+	 {
+	    document.getElementById('count').innerHTML=count;
+		count++;
+	},300);
+
+}
+
+ function stop()
+ {
+ 	clearInterval(time);
+ }
+
+
+ function Restart()
+ {
+ 	count=0;
+ 	 document.getElementById('count').innerHTML=count;
+ 	 start();
+ }
+
+</script>
+</body>
+</html>
